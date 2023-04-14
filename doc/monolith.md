@@ -42,7 +42,7 @@ sudo yum install -y java-1.8.0-openjdk maven
 ### Install JBoss
 
 ```bash
-wget https://dxmawnu5c2623.cloudfront.net/jboss-eap-6.3.0.zip
+wget https://github.com/nsubrahm-aws/app-mod-j2ee/releases/download/v0.0.0/jboss-eap-6.3.0.zip
 unzip jboss-eap-6.3.0.zip
 cd jboss-eap-6.3/bin
 nohup ./standalone.sh  -b 0.0.0.0 -bmanagement 0.0.0.0 &
@@ -52,7 +52,7 @@ nohup ./standalone.sh  -b 0.0.0.0 -bmanagement 0.0.0.0 &
 
 ```bash
 cd
-wget https://dxmawnu5c2623.cloudfront.net/ticket-monster-main.tar.gz
+wget https://github.com/nsubrahm-aws/app-mod-j2ee/releases/download/v0.0.0/ticket-monster-main.tar.gz
 tar -xzvf ticket-monster-main.tar.gz
 cd ticket-monster-main/demo
 mvn clean package jboss-as:deploy
@@ -72,7 +72,7 @@ mvn clean package jboss-as:deploy
 1. Download and extract the WAR file to your laptop with the following command.
 
 ```bash
-wget https://dxmawnu5c2623.cloudfront.net/h2-console.zip
+wget https://github.com/nsubrahm-aws/app-mod-j2ee/releases/download/v0.0.0/h2-console.zip
 unzip h2-console.zip
 ```
 
